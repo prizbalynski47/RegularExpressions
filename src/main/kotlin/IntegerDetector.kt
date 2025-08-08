@@ -1,3 +1,3 @@
 class IntegerDetector: Detector {
-    override var state: State = IntegerFirstValueState()
+    override var startState: State = IntegerFirstValueState()
 }

@@ -1,7 +1,8 @@
 interface Detector {
-    var state: State
+    val startState: State
 
     fun isValid(string: String): Boolean {
+        var state = startState
         for (letter in string) {
             state = state.consumeLetter(letter.toString())
         }

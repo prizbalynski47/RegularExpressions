@@ -1,10 +1,12 @@
 class PasswordDetector: Detector {
-    override var state: State = NoCapitalNoSpecialCharState()
+    override var startState: State = NoCapitalNoSpecialCharState()
 
     override fun isValid(string: String): Boolean {
-        for (letter in string) {
-            state = state.consumeLetter(letter.toString())
-        }
-        return (state is ValidState) and (string.length > 7)
+//        var state = startState
+//        for (letter in string) {
+//            state = state.consumeLetter(letter.toString())
+//        }
+//        return (state is ValidState) and (string.length > 7)
+        return super.isValid(string) and (string.length > 7)
     }
 }

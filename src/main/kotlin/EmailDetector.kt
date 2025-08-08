@@ -1,3 +1,3 @@
 class EmailDetector: Detector {
-    override var state: State = LookingForPart1State()
+    override val startState: State = LookingForPart1State()
 }

@@ -1,3 +1,3 @@
 class Binary1And1Detector: Detector {
-    override var state: State = Binary1And1FirstValueState()
+    override val startState: State = Binary1And1FirstValueState()
 }

@@ -1,3 +1,3 @@
 class FloatingPointDetector: Detector {
-    override var state: State = FloatingFirstValueState()
+    override val startState: State = FloatingFirstValueState()
 }
