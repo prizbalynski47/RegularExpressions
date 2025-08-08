@@ -1,8 +1,9 @@
 fun main() {
-    val myString = "10000101"
+    val myString = "{}*\\$.&\\$*(@*\\$%&.*&*"
     val floatDetector = FloatingPointDetector()
     val intDetector = IntegerDetector()
     val binaryDetector = Binary1And1Detector()
+    val emailDetector = EmailDetector()
 
-    println(binaryDetector.isValid(myString))
+    println(emailDetector.isValid(myString))
 }
